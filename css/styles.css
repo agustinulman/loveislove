@@ -1,0 +1,275 @@
+/*Estilos de css*/
+
+/*reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*estilos generales*/
+body{
+    background-image: url("../img/pexels-alexander-grey-1317534.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    background-attachment: fixed;
+    color: blanchedalmond;
+    }
+
+/*estilos de header*/
+
+header{
+    background: none;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+/* estilos de main*/
+.main-contendor{
+    display:flex;
+    justify-content:space-between;
+   text-decoration: solid;
+    text-transform: uppercase;
+}
+
+.main-contenedor-dos{
+    display:block;
+    justify-content:space-between;
+   text-decoration: solid;
+    text-transform: uppercase;
+}
+
+main{
+    padding: 30px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+main img{
+    padding: 4em 2em 1em;
+    width: 20rem;
+    margin: 0.5em 3em;
+}
+
+/* estilos tipograficos*/
+.titulo{
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 1px 1px 2px black;
+
+
+}
+.titulo-dos:hover{
+    padding: 10px;
+    margin: 10px;
+    background-color: violet;
+}
+
+.party:hover{
+ display: flex;
+ justify-content: center;
+ letter-spacing: 1px;
+ text-align: center;
+ font-weight: bolder;
+ font-style: italic;
+ color: blanchedalmond;
+ list-style: none;
+ background-color: rgb(180, 12, 12);
+ 
+}
+.ocio{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* estilo paginas somos nosotros y queer*/
+body {
+    width: 80%;
+    padding: 5em 5em;
+    max-width: 1200px;
+    margin: 2em auto;
+    font: Arial, Helvetica, sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+  }
+  .container h1{
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 1px 1px 2px black;
+  }
+  
+  
+  aside {
+    border-right: 1px solid rgb(153, 153, 153);
+  }
+  aside img {
+    padding: 0.3em;
+    width: 40%;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-areas:
+      "h1 h1"
+      "sidebar content"
+      "footer footer";
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+  }
+   h1 {
+    grid-area: h1;
+  }
+  
+  article {
+    grid-area: content;
+  }
+  
+  aside {
+    grid-area: sidebar;
+  }
+  
+  footer {
+    grid-area: footer;
+  } 
+/*estilo pagina diversion*/
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/*estilos de footer*/
+footer{
+    text-align: center;
+    margin-top: 40em;
+    align-items: center;
+
+}
+
+
+/*media*/
+@media  
+    (min-width: 1200px){
+    header{
+        background: none;
+        height: 80px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+/* propiedades del contenedor*/
+.main-contendor{
+    display:flex;
+    justify-content:space-between;
+   text-decoration: solid;
+    text-transform: uppercase;
+    color: antiquewhite;
+}
+/*propiedades del body*/
+body{
+    background-image: url("../img/pexels-alexander-grey-1317534.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    background-attachment: fixed;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    main img{
+        padding: auto;
+        width: 20rem;
+        margin: 0.5em 3em;
+    }
+}
+
+@media
+(min-width: 1200px){
+    body {
+        width: 80%;
+        padding: 5em 5em;
+        max-width: 1200px;
+        margin: 2em auto;
+        font: Arial, Helvetica, sans-serif;
+      }
+      
+      .container {
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 3fr;
+        gap: 20px;
+      }
+      .container h1{
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 1px 1px 2px black;
+      }
+      
+      
+      aside {
+        border-right: 1px solid rgb(153, 153, 153);
+      }
+      aside img {
+        padding: 0.3em;
+        width: 40%;
+      }
+      
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 20px;
+      }
+      
+      .container {
+        display: grid;
+        grid-template-areas:
+          "h1 h1"
+          "sidebar content"
+          "footer footer";
+        grid-template-columns: 1fr 3fr;
+        grid-gap: 20px;
+      }
+       h1 {
+        grid-area: h1;
+      }
+      
+      article {
+        grid-area: content;
+      }
+      
+      aside {
+        grid-area: sidebar;
+      }
+      
+      footer {
+        grid-area: footer;
+      } 
+
+}
