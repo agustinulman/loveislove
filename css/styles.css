@@ -16,7 +16,7 @@ body{
     background-size: cover;
     justify-content: space-between;
     background-attachment: fixed;
-    color: blanchedalmond;
+    color: rgb(14, 10, 4);
     }
 
 /*estilos de header*/
@@ -91,6 +91,7 @@ main img{
 .ocio{
     display: flex;
     justify-content: center;
+    
 }
 
 
@@ -118,7 +119,7 @@ body {
   
   
   aside {
-    border-right: 1px solid rgb(153, 153, 153);
+    border-right: 1px solid rgb(0, 0, 0);
   }
   aside img {
     padding: 0.3em;
@@ -159,10 +160,19 @@ body {
 
 .main-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+
+.tarjeta{
+  display: flex;
+  justify-content: center;
+  
+}
+
+
 /*estilos de footer*/
 footer{
     text-align: center;
@@ -190,7 +200,7 @@ footer{
     justify-content:space-between;
    text-decoration: solid;
     text-transform: uppercase;
-    color: antiquewhite;
+    color: rgb(12, 11, 10);
 }
 /*propiedades del body*/
 body{
@@ -229,7 +239,7 @@ body{
       .container h1{
         padding: 20px;
         margin: 10px;
-        box-shadow: 1px 1px 2px black;
+        box-shadow: 1px 1px 2px rgb(239, 239, 241);
       }
       
       
@@ -271,5 +281,103 @@ body{
       footer {
         grid-area: footer;
       } 
-
-}
+    }
+    @media (max-width: 768px) 
+      {
+        header{
+            background: none;
+            height: 80px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+          }
+    /* propiedades del contenedor*/
+    .main-contendor{
+        display:flex;
+        justify-content:space-between;
+       text-decoration: solid;
+        text-transform: uppercase;
+        color: rgb(12, 11, 10);
+    }
+    /*propiedades del body*/
+    body{
+        background-image: url("../img/pexels-alexander-grey-1317534.jpg");
+        background-repeat:no-repeat;
+        background-size: cover;
+        justify-content: space-between;
+        background-attachment: fixed;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    
+        main img{
+            padding: auto;
+            width: 20rem;
+            margin: 0.5em 3em;
+        }
+    }
+    
+    @media
+    (max-width: 768px){
+        body {
+            width: 80%;
+            padding: 5em 5em;
+            max-width: 1200px;
+            margin: 2em auto;
+            font: Arial, Helvetica, sans-serif;
+          }
+          
+          .container {
+            width: 100%;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+          }
+          .container h1{
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 1px 1px 2px rgb(239, 239, 241);
+          }
+          
+          
+          aside {
+            border-right: 1px solid rgb(153, 153, 153);
+          }
+          aside img {
+            padding: 0.3em;
+            width: 40%;
+          }
+          
+          .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+          }
+          
+          .container {
+            display: grid;
+            grid-template-areas:
+              "h1 h1"
+              "sidebar content"
+              "footer footer";
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 20px;
+          }
+           h1 {
+            grid-area: h1;
+          }
+          
+          article {
+            grid-area: content;
+          }
+          
+          aside {
+            grid-area: sidebar;
+          }
+          
+          footer {
+            grid-area: footer;
+          } 
+        }
