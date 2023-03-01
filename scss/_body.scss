@@ -1,0 +1,48 @@
+@import "../scss/var/color";
+body{
+  background-image: url("../img/pexels-alexander-grey-1317534.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  justify-content: space-between;
+  background-attachment: fixed;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.main{
+      padding: 30px;
+      height: 400px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+    img{
+      padding: 4em 2em 1em;
+      width: 20rem;
+      margin: 0.5em 3em;  
+    }
+   .main-contenedor{
+       display:flex;
+        justify-content:space-between;
+      text-decoration: solid;
+       text-transform: uppercase;
+            .titulo{
+           padding: 20px;
+           margin: 10px;
+          box-shadow: 1px 1px 2px black;
+                  }
+              .titulo-dos{
+                       hover{
+                      padding: 10px;
+                       margin: 10px;
+                       background-color: $color-principal;
+                                     
+                       }
+                      }
+  }       
+footer {
+  text-align: center;
+  margin-top: 40em;
+  align-items: center;
+  grid-area: footer;
+  }
+}     
+}
